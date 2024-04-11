@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>
+        Essa imagem tem 3 tamanhos, de acordo com a janela do seu navegador!! <br>
+       <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-small.jpg">
+        <source media="(max-width: 1224px)" srcset="imagens/paisagem-medium.jpg">
+        <img src="imagens/paisagem-full.jpg" alt="Paisagem Grande">
+       </picture>
+    </p>
+</body>
+</html>

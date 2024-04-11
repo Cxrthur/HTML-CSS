@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando caixas</title>
+    <style>
+        body {
+            background-color: #AEA3B0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            padding: 10px;
+            background-color: #EAF0CE;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: #c2c7ae;
+            color: white;
+            box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.445);
+        }
+
+        main {
+            background-color: #d1d6b8;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        h2 {
+            background-color: #909482;
+            color: white;
+            text-align: center;
+            padding: 2px 5px;
+            
+        }
+
+        #conteudo {
+            padding: 10px;
+            background-color: #AEA3B0;
+            color: black;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        nav > a {
+            color: white;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+
+        .diferentao {
+            background-color: #6f6870;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> O header vai h1</h1>
+        <nav> <!-- isso é navegação, vai ter links aqui e coisa do tipo -->
+            <a href="#">link</a> <a href="#">link</a> <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <h2>tem que ter h2 em main po te liga aí</h2>
+        <p>main é aonde vai ir o conteúdo bruto, os h2 e os parágrafos</p>
+        <section id="assuntos">
+            <p>essa sessão retrata os assuntos abordados, então coloco id assuntos nela</p>
+        </section>
+        <section id="conteudo">
+            <h2 class="diferentao">posso criar sessões dentro de main, que é explorando o conteúdo e pa</h2>
+            <p>outra coisa que posso fazer é colocar id em sessões pra explicar tipo, essa sessão é o conteúdo, a sessão acima é retratando os assuntos abordados e pa</p>
+            <p>mas o bagulho das sessões é que ah, eu quero explicar um dos motivos da revolução francesa, aí meto uma sessão, boto o h2 pq meu site é sobre revolução francesa isso tem que ta no h1, aí essa sessão explicando os motivos da revolução vai ter que ter um h2 e um parágrafo falando sobre, aí chega deu de explicar motivos vamo pras consequências</p>
+        </section>
+        <section id="entendeu?">
+            <h2>aí essa sessão seria a sessão dizendo po as consequências das revolução foro as seguinte</h2>
+            <p>posso ter mais de uma sessão, essa aqui por exemplo é a sessão entendeu?</p>
+            <p>aí eu explicaria com parágrafos e outros h2 caso necessário ou até h3 as consequencia</p>
+        </section>
+    </main>
+    <footer>
+        <p>a ideia é que as tags sejam semânticas, e facilitar também a personalização de tudo isso com css, e também ficar mais no radar do mecanismo de busca do google</p>
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>

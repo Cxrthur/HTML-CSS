@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>
+    abrir em outros telefones e pa
+    </p>   
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <p>
+        a ordem dos sourcers tem que estar na ordem, foto g em baixo, foto m meio, foto p em cima de todas, de cima pra baixo, da menor pra maior
+    </p>
+</body>
+<p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="suricatos/suricato-400.png">
+        <source media="(max-width: 1050px)" srcset="suricatos/suricato-700.png">
+        <img src="suricatos/suricato-1000.png" alt="suricatones">
+    </picture>
+</p>
+<h1>colocando audio no site em html5</h1>
+<p>
+    <audio preload="metadata" controls>
+        <source src="midia/puttingontherizz.mp3" type="audio/mpeg">
+        <source src="midia/wishyouneverleft.ogg" type="audio/ogg">
+        <source src="midia/puttingontherizz.wav" type="audio/wav">
+        <p>se o seu navegador não teve a pachorra de reproduzir um misero audio. <a href="midia/puttingontherizz.mp3">clica nessa bosta</a></p>
+    </audio>
+<!-- navegadores são compatíveis com MP3 WAV OGG -->
+<!--se usar outro método de alocar áudio a compatiblidade vai ser maior (mais navegadores)-->
+</p>
+</html>
