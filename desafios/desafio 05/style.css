@@ -1,0 +1,24 @@
+@metacharset "UTF-8";
+
+body {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    text-align: center;
+}
+
+p {
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+li > a:hover {
+    color: purple;
+}
