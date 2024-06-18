@@ -11,6 +11,14 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+             position: sticky;
+             top: -1px;
+             background-color: rgb(63, 63, 63);
         }
 
         td, th {
@@ -19,11 +27,22 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(63, 63, 63);
+            color: white;
         }
 
         .numero {
             text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
     </style>
@@ -32,6 +51,7 @@
     <h1>Hierarquia de tabelas grandes</h1>
     <!--
     Table
+        CAPTION
         THEAD
            TR, TD, TH
         TBODY
@@ -40,10 +60,11 @@
            TR, TD, TH
      -->
            <table>
+            <caption>População dos Estado</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -87,10 +108,78 @@
                     <td>Santa Catarina</td>
                     <td class="numero">7 610 361</td>
                 </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="numero">7 056 495</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="numero">6 775 805</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="numero">3 974 687</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="numero">3 941 613</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="numero">3 833 712</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="numero">3 658 649</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="numero">3 302 729</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="numero">3 271 199</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="numero">3 127 683</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="numero">2 817 381</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="numero">2 757 013</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="numero">2 209 558</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="numero">1 581 196</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="numero">1 511 460</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="numero">830 018</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="numero">733 759</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="numero">636 707</td>
+                </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="numero"><strong>151.058.725</strong></td>
                 </tr>
             </tfoot>
