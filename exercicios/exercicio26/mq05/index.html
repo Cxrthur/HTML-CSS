@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menus responsivos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/medias.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-            <menu>
+        <i id="hamburguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="menu">
                 <ul>
                     <li><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
@@ -28,5 +30,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt consequatur suscipit nam error quasi reiciendis tempora tenetur quis sed aut omnis delectus quam dolore, exercitationem consequuntur. Ut, natus quaerat!</p>
             </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
